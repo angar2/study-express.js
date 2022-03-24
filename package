@@ -1,0 +1,49 @@
+[
+    {
+        name: "express-generator"
+        explain: "express의 기본적,모범적인 코드구성을 만들어주는 기능"
+        command: [
+            "npm install express-generator -g"
+            "express -h"    ;사용예제
+            "express 'app name'"    ;기본구성 생성
+            "cd 'app name"  ;프로젝트 앱에 진입
+            "npm install"   ;package.json에 준비되어 있는 dependency들을 설치함
+        ]
+    },
+    {
+        name: "pm2"
+        explain: "node.js 무중단 서비스"
+        command: [
+            "npm install pm2 -g",
+            "pm2 start main.js --watch --ignore-watch="data/*" --no-daemon",
+            "pm2 log",
+            "pm2 list",
+            "pm2 kill"
+        ]
+    },
+    {
+        name: "sanitize-html"
+        explain: "HTML 태그를 걸러내는 보안 서비스"
+        command: "npm install -S sanitize-html"
+    },
+    {
+        name: "express"
+        explain: "nodeJS의 서버 코딩용 프레임워크"
+        command: "npm install express"
+    },
+    {
+        name: "body-parser"
+        explain: "클라이언트 post 요청을 body params에 담아 편리하게 추출함"
+        command: "npm install body-parser --save"
+    },
+    {
+        name: "conmpression"
+        explain: "웹서버-웹브라우저 요청 시 데이터를 압축하여 전송 시 용량을 줄임"
+        command: "npm install conmpression --save"
+    },
+    {
+        name: "Helmet"
+        explain: "단골 보안 이슈를 자동으로 해결함"
+        command: "npm install --save Helmet"
+    }
+]
